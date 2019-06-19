@@ -2,6 +2,16 @@ class Event
   
   attr_accessor :name, :ticket_price
   
+  def initialize (name, ticket_price)
+    @name = name
+    @ticket_price = ticket_price
+    @@all << self
+  end
+  
+  def self.all
+    @@all
+  end
+  
 end
 
 # Event.all
