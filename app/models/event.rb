@@ -1,4 +1,7 @@
 class Event
+  
+  attr_accessor :name, :ticket_price
+  
 end
 
 # Event.all

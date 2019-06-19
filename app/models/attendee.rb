@@ -1,4 +1,6 @@
 class Attendee
+  
+  
 end
 
 # Attendee.all
