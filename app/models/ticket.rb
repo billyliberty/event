@@ -10,11 +10,13 @@ class Ticket
     @@all << self
   end
   
+  # Ticket.all
+    # Returns an array of all Ticket instances:
+    
   def self.all
     @@all
   end
   
 end
 
-# Ticket.all
-    # Returns an array of all Ticket instances
+
