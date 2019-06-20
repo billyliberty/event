@@ -21,6 +21,9 @@ class Event
   # Returns an array of Attendee that have Tickets for the Event:
   
   def attendees 
+    Ticket.all.select do |ticket|
+      ticket.attendee == self
+    end
   end
   
   # Event#average_age

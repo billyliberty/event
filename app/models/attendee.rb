@@ -21,6 +21,9 @@ class Attendee
   # Returns an array of all Events that the Attendee is attending:
   
   def attendee_events
+    Events.all.select do |event|
+      event.attendee == self
+    end
   end
   
   # Attendee#money_spent
