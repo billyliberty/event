@@ -5,8 +5,8 @@ class Ticket
   @@all = []
   
   def initialize (event, attendee)
-    @event = event
     @attendee = attendee
+    @event = event
     @@all << self
   end
   
