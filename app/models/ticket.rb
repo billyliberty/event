@@ -10,6 +10,8 @@ class Ticket
     @@all << self
   end
 
+  # Returns an array of all Tickets
+
   def self.all
     @@all
   end
