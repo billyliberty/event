@@ -9,10 +9,14 @@ class Attendee
     @age = age
     @@all << self
   end
+  
+  # Returns an array of all Attendees
 
   def self.all
     @@all
   end
+  
+  # Returns an array of all Events that the Attendee is attending.
   
   def tickets
     Ticket.all.select do |ticket|
@@ -26,11 +30,7 @@ class Attendee
     end
   end
   
-  def sum_tickets
-    events.reduce(0) do |sum, ticket|
-      sum + event.ticket_price
-    end
-  end
+  # Returns the dollar amount this Attendee has spent on Tickets for Events
   
   def number_of_events
     events.length 
@@ -39,6 +39,8 @@ class Attendee
   def money_spent
     sum_tickets * number_of_events
   end
+  
+  # Accepts an Event instance as an argument and makes it so that, when #events is called on this Attendee instance, the passed-in Event will appear in the resulting array.
   
   def buy_ticket (event)
     puts ""
