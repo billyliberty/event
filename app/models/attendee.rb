@@ -48,6 +48,14 @@ class Attendee
     Ticket.new(self, event)
   end
   
+  def fun 
+    if number_of_events >= 3
+      puts "MAXIMUM 9000 FUN LEVEL UNLOCKED"
+    else
+      puts "Why so boring? HAVE MORE FUN PLS"
+    end
+  end
+  
 end
 
 
