@@ -30,6 +30,12 @@ class Event
     puts "TEST"
   end
   
+  def sum_age_attendees (attendee)
+    attendee.reduce(0) do |sum, attendee|
+      sum + attendee.age
+    end
+  end
+  
   # Event#average_age
   # Returns the average age of all the Attendees that will be at the Event:
   
