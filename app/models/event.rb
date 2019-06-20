@@ -34,9 +34,7 @@ class Event
   end
   
   def sum_of_ages
-    attendees.reduce(0) do |sum, attendee|
-      sum + attendee.age
-    end
+    
   end
   
   def average_age

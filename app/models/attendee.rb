@@ -26,19 +26,25 @@ class Attendee
     end
   end
   
-  # Returns the sum of the price for all tickets in the event instance:
+  # Returns the sum of the price for all tickets:
   
   def sum_tickets (ticket)
-    ticket.reduce(0) do |sum, ticket|
+    events.reduce(0) do |sum, ticket|
       sum + event.ticket_price
     end
+  end
+  
+  # Returns the total number of events for the attendee instance:
+  
+  def number_of_events
+    events.length 
   end
     
   # Attendee#money_spent
   # Returns the dollar amount this Attendee has spent on Tickets for Events:
   
   def money_spent
-    sum_tickets * events
+    sum_tickets * number_of_events
   end
   
   # Attendee#buy_ticket
