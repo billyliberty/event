@@ -20,7 +20,7 @@ class Event
   # Event#attendees
   # Returns an array of Attendee that have Tickets for the Event:
   
-  def attendees 
+  def self.attendees 
     Ticket.all.select do |ticket|
       ticket.attendee == self
     end
@@ -29,19 +29,19 @@ class Event
   # Event#average_age
   # Returns the average age of all the Attendees that will be at the Event:
   
-  def average_age
+  def self.average_age
   end
   
   # Event#sell_ticket 
   # Accepts an Attendee instance as an argument and makes it so that, when #attendees is called on this Event instance, that Attendee instance will show up in the array:
   
-  def sell_ticket
+  def self.sell_ticket
   end
   
   # Event#money_made
   # Returns an integer that is the product of the number of Tickets sold for this event and the price of the Ticket:
   
-  def money_made
+  def self.money_made
   end
 
 
