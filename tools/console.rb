@@ -18,7 +18,7 @@ monster_fest = Event.new("Monster Fest", 800)
 
 lucyti = Ticket.new(lucy, monster_fest)
 peteti = Ticket.new(pete, monster_fest)
-figgieti = Ticket.new(figgie, comic_con)
+figgieti = Ticket.new(figgie, monster_fest)
 
 #The variable `lucy` will point to an instance of a new attendee
 

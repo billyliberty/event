@@ -27,25 +27,28 @@ class Event
   end
   
   def tickets
+    puts "TEST"
   end
   
   # Event#average_age
   # Returns the average age of all the Attendees that will be at the Event:
   
   def average_age
+    puts "TEST"
   end
   
   # Event#sell_ticket 
   # Accepts an Attendee instance as an argument and makes it so that, when #attendees is called on this Event instance, that Attendee instance will show up in the array:
   
   def sell_ticket (attendee)
-   
+    puts "TEST"
   end
   
   # Event#money_made
   # Returns an integer that is the product of the number of Tickets sold for this event and the price of the Ticket:
   
   def money_made
+    puts "TEST"
   end
 
 end

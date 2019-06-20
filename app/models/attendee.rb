@@ -30,13 +30,14 @@ class Attendee
   # Returns the dollar amount this Attendee has spent on Tickets for Events:
   
   def money_spent
+    puts "TEST"
   end
   
   # Attendee#buy_ticket
   # Accepts an Event instance as an argument and makes it so that, when #events is called on this Attendee instance, the passed-in Event will appear in the resulting array:
   
   def buy_ticket (event)
-    
+    puts "TEST"
   end
   
 end
