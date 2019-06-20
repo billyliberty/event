@@ -44,15 +44,16 @@ class Event
   # Event#sell_ticket 
   # Accepts an Attendee instance as an argument and makes it so that, when #attendees is called on this Event instance, that Attendee instance will show up in the array:
   
-  def sell_ticket (attendee)
+  def sell_ticket
     puts ""
+    # Ticket.new (attendee, self)
   end
   
   # Event#money_made
   # Returns an integer that is the product of the number of Tickets sold for this event and the price of the Ticket:
   
   def money_made
-    puts "TEST"
+    attendees.length * self.ticket_price
   end
 
 end
