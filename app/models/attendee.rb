@@ -43,7 +43,7 @@ class Attendee
   # Accepts an Event instance as an argument and makes it so that, when #events is called on this Attendee instance, the passed-in Event will appear in the resulting array.
   
   def buy_ticket (event)
-    puts ""
+    Ticket.new(self, event)
   end
   
 end
