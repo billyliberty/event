@@ -25,9 +25,9 @@ class Attendee
       ticket.attendee == self
     end
   end
-  
+
   def events
-    tickets.collect do |ticket|
+    tickets.map do |ticket|
       ticket.event
     end
   end
