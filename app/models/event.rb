@@ -38,7 +38,7 @@ class Event
   # Accepts an Attendee instance as an argument and makes it so that, when #attendees is called on this Event instance, that Attendee instance will show up in the array:
   
   def sell_ticket (attendee)
-    Ticket.new (attendee, self)
+   
   end
   
   # Event#money_made
@@ -47,9 +47,6 @@ class Event
   def money_made
   end
 
-
-  
-  
 end
 
 
