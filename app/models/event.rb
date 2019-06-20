@@ -26,17 +26,21 @@ class Event
     end
   end
   
-  def sum_age_attendees (attendee)
-    attendee.reduce(0) do |sum, attendee|
+  # Event#average_age
+  # Returns the average age of all the Attendees that will be at the Event:
+  
+  def number_of_attendees
+    attendees.length
+  end
+  
+  def sum_of_ages
+    attendees.reduce(0) do |sum, attendee|
       sum + attendee.age
     end
   end
   
-  # Event#average_age
-  # Returns the average age of all the Attendees that will be at the Event:
-  
   def average_age
-    puts "TEST"
+    sum_of_ages/number_of_attendees
   end
   
   # Event#sell_ticket 
