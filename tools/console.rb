@@ -14,8 +14,7 @@ lucy = Attendee.new("Lucy", 22)
 pete = Attendee.new("Pete", 18)
 figgie = Attendee.new("Figgie", 32)
 
-monster_fest = Event.new("Monster Fest", 8)
-comic_con = Event.new("Comic Con", 700)
+monster_fest = Event.new("Monster Fest", 800)
 
 lucyti = Ticket.new(lucy, monster_fest)
 peteti = Ticket.new(pete, monster_fest)

@@ -20,8 +20,8 @@ class Attendee
   # Attendee#events
   # Returns an array of all Events that the Attendee is attending:
   
-  def attendee_events
-    Events.all.select do |event|
+  def events
+    Event.all.select do |event|
       event.attendee == self
     end
   end

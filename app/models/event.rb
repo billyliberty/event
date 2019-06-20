@@ -27,6 +27,7 @@ class Event
   end
   
   def tickets
+  end
   
   # Event#average_age
   # Returns the average age of all the Attendees that will be at the Event:
