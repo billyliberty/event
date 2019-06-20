@@ -15,14 +15,16 @@ pete = Attendee.new("Pete", 18)
 figgie = Attendee.new("Figgie", 32)
 luna = Attendee.new("Luna", 24)
 
-monster_fest = Event.new("Monster Fest", 800)
+monster_boat = Event.new("Monster Boat", 800)
 sports_ball = Event.new("Sports Ball", 1300)
+worm_slide = Event.new("Worm Slide", 9000)
 
-lucytick = Ticket.new(lucy, monster_fest)
-petetick = Ticket.new(pete, monster_fest)
-figgietick = Ticket.new(figgie, monster_fest)
+
+lucytick = Ticket.new(lucy, monster_boat)
+petetick = Ticket.new(pete, monster_boat)
+figgietick = Ticket.new(figgie, monster_boat)
 lunatick = Ticket.new(luna, sports_ball)
-lunatick2 = Ticket.new(luna, monster_fest)
+lunatick2 = Ticket.new(luna, monster_boat)
 
 #The variable `lucy` will point to an instance of a new attendee
 
