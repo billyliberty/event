@@ -22,6 +22,7 @@ lucytick = Ticket.new(lucy, monster_fest)
 petetick = Ticket.new(pete, monster_fest)
 figgietick = Ticket.new(figgie, monster_fest)
 lunatick = Ticket.new(luna, sports_ball)
+lunatick2 = Ticket.new(luna, monster_fest)
 
 #The variable `lucy` will point to an instance of a new attendee
 

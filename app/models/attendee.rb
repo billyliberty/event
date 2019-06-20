@@ -21,16 +21,24 @@ class Attendee
   # Returns an array of all Events that the Attendee is attending:
   
   def events
-    Event.all.select do |event|
-      event.attendee == self
+    Ticket.all.select do |ticket|
+      ticket.event == self
     end
   end
   
+  # Returns the sum of the price for all tickets in the event instance:
+  
+  def sum_tickets (ticket)
+    ticket.reduce(0) do |sum, ticket|
+      sum + event.ticket_price
+    end
+  end
+    
   # Attendee#money_spent
   # Returns the dollar amount this Attendee has spent on Tickets for Events:
   
   def money_spent
-    puts "TEST"
+    sum_tickets * events
   end
   
   # Attendee#buy_ticket
