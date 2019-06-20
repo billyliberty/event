@@ -36,14 +36,10 @@ class Attendee
     events.length 
   end
   
-  def total_price
-    events.reduce(0) do |sum, event|
+  def money_spent
+    events.reduce(0) do |sum, event| 
       sum + event.ticket_price
     end
-  end
-  
-  def money_spent
-    number_of_events * total_price
   end
   
   # Accepts an Event instance as an argument and makes it so that, when #events is called on this Attendee instance, the passed-in Event will appear in the resulting array.
