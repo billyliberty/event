@@ -1,6 +1,6 @@
 class Ticket
   
-  attr_accessor :event, :attendee
+  attr_accessor :attendee, :event
   
   @@all = []
   
