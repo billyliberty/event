@@ -43,7 +43,11 @@ class Event
   end
 
   def average_age
-   total_age / total_crowd
+    if total_crowd != 0
+      total_age / total_crowd
+    else
+      puts "Nobody likes this event! *sadface dot emoji*"
+    end
   end
   
   # Accepts an Attendee instance as an argument and makes it so that, when #attendees is called on this Event instance, that Attendee instance will show up in the array.
